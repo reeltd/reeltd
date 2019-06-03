@@ -1,0 +1,21 @@
+name: reepy
+version: git
+summary: OfflineIMAP
+description: |
+  OfflineIMAP is software that downloads your email mailbox(es) as local
+  Maildirs. OfflineIMAP will synchronize both sides via IMAP.
+
+confinement: devmode
+base: core18
+
+parts:
+  offlineimap:
+    plugin: python
+    python-version: python2
+    source: .
+    stage-packages:
+      - python-six
+
+apps:
+  offlineimap:
+    command: bin/offlineimap
