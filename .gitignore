@@ -1,4 +1,5 @@
 /node_modules
+/public/mirror/secret
 /public/hot
 /public/assets
 /public/storage
@@ -10,3 +11,4 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+dev-pack.zip
