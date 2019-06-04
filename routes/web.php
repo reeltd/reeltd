@@ -18,3 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+/** Ads Routes */
+Route::get('/add/ad', [
+    'uses' => '\ree\Http\Controllers\AdsController@addAd',
+'as' => 'ads.index',
+]);

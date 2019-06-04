@@ -1,5 +1,11 @@
 <?php
 
+use SEOMeta;
+use OpenGraph;
+use Twitter;
+## or
+use SEO;
+
 namespace ree\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -23,6 +29,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+
+        
+
+
+
         return view('home');
     }
 }
