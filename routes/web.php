@@ -25,3 +25,10 @@ Route::get('/add/ad', [
     'uses' => '\ree\Http\Controllers\AdsController@addAd',
 'as' => 'ads.index',
 ]);
+
+
+/** Admin Routes */
+Route::get('/ree', [
+    'uses' => '\ree\Http\Controllers\ReeLTDController@getIndex',
+'as' => 'reeltd.index',
+]);
