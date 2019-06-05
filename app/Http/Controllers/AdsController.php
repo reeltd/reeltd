@@ -1,11 +1,7 @@
 <?php
 
 namespace ree\Http\Controllers;
-use SEOMeta;
-use OpenGraph;
-use Twitter;
-## or
-use SEO;
+
 use ree\User;
 use Illuminate\Http\Request;
 
