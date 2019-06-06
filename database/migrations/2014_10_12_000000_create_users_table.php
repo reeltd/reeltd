@@ -27,7 +27,7 @@ class CreateUsersTable extends Migration
             $table->string('location')->nullable();
             $table->string('website')->nullable();
             $table->string('ipaddr')->nullable();
-            $table->string('photo')->nullable();
+            $table->string('photo')->default('user.png');
             $table->string('access')->nullable();
             $table->rememberToken();
             $table->string('lastseen')->nullable();

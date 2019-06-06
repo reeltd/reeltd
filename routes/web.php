@@ -11,9 +11,15 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+/** Global Routes */
+Route::get('/', [
+    'uses' => '\ree\Http\Controllers\GlobalController@getIndex',
+'as' => 'global.index',
+]);
 
 Auth::routes();
 
@@ -28,7 +34,13 @@ Route::get('/add/ad', [
 
 
 /** Admin Routes */
-Route::get('/ree', [
+Route::get('/reeltd', [
     'uses' => '\ree\Http\Controllers\ReeLTDController@getIndex',
 'as' => 'reeltd.index',
+]);
+
+/** Admin Routes */
+Route::get('/reeltd/locked', [
+    'uses' => '\ree\Http\Controllers\ReeLTDController@getLock',
+'as' => 'reeltd.lock',
 ]);
