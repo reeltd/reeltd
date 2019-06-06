@@ -2,6 +2,7 @@
 /public/mirror/secret
 /public/hot
 /public/ree
+/public/inc
 /public/assets
 /public/storage
 /storage/*.key

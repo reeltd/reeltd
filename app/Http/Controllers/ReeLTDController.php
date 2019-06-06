@@ -10,4 +10,10 @@ class ReeLTDController extends Controller
     {
         return view('reeltd.index');
     }
+
+    public function getLock()
+    {
+        return view('reeltd.lock');
+    }
 }
+

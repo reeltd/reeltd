@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- CSRF Token -->
@@ -11,18 +11,12 @@
 
     <title>{{ config('app.name', 'ReeLTD') }}</title>
 
-    <!-- Scripts -->
-    <!--<script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/jquery-3.4.1.min.js') }}" defer></script>-->
+    <link rel="stylesheet" href="{{ asset('inc/assets/css/main.css') }}" />
 
-    <!-- Fonts -->
-    <!--<link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">-->
 
-    <!-- Styles -->
-    <!--<link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>-->
-    <!-- iPhone enable -->
+
+
+
     <link rel="manifest" href="{{ asset('js/manifest.json') }}">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -65,11 +59,33 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+
+
+
+
 </head>
 
-            @yield('content')
 
 
+
+
+
+@yield('content')
+
+
+
+
+		    <!-- Scripts -->
+            <script src="{{ asset('inc/assets/js/jquery.min.js') }}"></script>
+			<script src="{{ asset('inc/assets/js/jquery.scrolly.min.js') }}"></script>
+			<script src="{{ asset('inc/assets/js/browser.min.js') }}"></script>
+			<script src="{{ asset('inc/assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ asset('inc/assets/js/util.js') }}"></script>
+            <script src="{{ asset('inc/assets/js/main.js') }}"></script>
+            
+
+            
 <!-- jQuery 3 -->
 <script src="{{ asset('ree/bower_components/jquery/dist/jquery.min.js') }}"></script>
 <!-- jQuery UI 1.11.4 -->
@@ -101,11 +117,10 @@
 <script src="{{ asset('ree/bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
 <!-- FastClick -->
 <script src="{{ asset('ree/bower_components/fastclick/lib/fastclick.js') }}"></script>
-<!-- AdminLTE App -->
-<script src="{{ asset('ree/dist/js/adminlte.min.js') }}"></script>
+<!-- AdminLTE App
+<script src="{{ asset('ree/dist/js/adminlte.min.js') }}"></script> -->
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ asset('ree/dist/js/pages/dashboard.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('ree/dist/js/demo.js') }}"></script>
-
 </html>
