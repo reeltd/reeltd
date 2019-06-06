@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /node_modules
 /public/mirror/secret
 /public/hot
@@ -8,6 +9,18 @@
 /storage/*.key
 /vendor
 /vendor/*
+=======
+node_modules
+public/mirror/secret
+public/hot
+public/ree
+public/inc
+public/assets
+public/storage
+storage/*.key
+vendor
+vendor/*
+>>>>>>> 84d1be21181af87600f6b95ef225d039f387d2d4
 .env
 .phpunit.result.cache
 Homestead.json
