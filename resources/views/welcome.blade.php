@@ -6,11 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ReeLTD</title>
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <script src="{{ asset('js/app.js') }}" defer></script>
+
     </head>
     <!--<div class="col-md-12">
         <div class="row">
@@ -54,21 +50,45 @@
                 </a>
             </div>
         </div>
-    </div>-->
+    </div>
         <a href="#ree">ReeLTD</a>
-        <a href="#reeltd">ReeLTD</a>
+        <a href="#reeltd">ReeLTD</a>-->
     <div class="col-md-12">
         <div class="row">
 
             <!-- Left div -->
             <div class="col-md-3">
                 <div class="card">
+                    <div style="background-color:rgba(60, 76, 83, 0.571); color:white" class="card-header">
+                        <span>Real Estate Empire LTD.</span>
+                    </div>
+                </div>
+
+            
+                <div class="card">
                     <div class="card-header">
-                        <span style="float:right;font-size:20px"><a href="/">الصفحة الرئيسية <i class="fas fa-home"></i></a></span>
+                        <span style="float:right;font-size:20px">الصفحة الرئيسية <i class="fas fa-home"></i></span>
                     </div>
                     <div class="title m-b-md">
-                        Real Estate Empire LTD.
+                        
                     </div>
+                    <div class="row">
+                        <div style="padding-top:8px" style="float:right"  class="col-md-10">
+                            <ul class="navbar-nav">
+                                <span >
+                                    <li style="float:right"><==</li><a style="float:right" href="api/user">API&nbsp;</a> 
+                                </span>       
+                            </ul>
+                        </div>
+                    </div>
+                </div><br />
+                    <div class="card">
+                    <div style="color:black" class="card-header">
+                        <span style="float:right;font-size:20px">الصفحة الرئيسية </span>
+                    </div>
+
+
+
                     <div class="row">
                         <div style="padding-top:8px" style="float:right"  class="col-md-10">
                             <ul class="navbar-nav">
@@ -114,7 +134,7 @@
     </div>
     
 <!-- Full height page section 1 -->
-
+<br />
 <div id="ree" class="flex-center position-ref full-height" style="background-image:url('assets/imgs/ree1.jpeg')">
     <div class="content">
         <div style="padding-top:40px" class="col-md-12">
@@ -138,10 +158,8 @@
     <i class="fas fa-arrow-down" style="font-size:26px"></i>
 </div>
 
-<hr /><br />
-        
 <!-- Full height page section 2 -->
-<div id="reeltd" class="flex-center position-ref full-height" style=";background-size: contain;background-image:url('assets/imgs/ree2.jpg')">
+<!--<div id="reeltd" class="flex-center position-ref full-height" style=";background-size: contain;background-image:url('assets/imgs/ree2.jpg')">
     <div class="content">
         <div style="padding-top:40px" class="col-md-12">
             <div class="row">
@@ -159,27 +177,25 @@
                 </div>
             </div>
         </div>
-    </div>
-</div><br /><hr /><br />
+    </div>-->
+</div><hr /><br />
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header">
-                        <h3>Follow Us!</h3>
-                        </div>
-                    </div><br />
                     <div class="container">
                         <div  style="float:left" class="row">
                             <img width="80px" height="80px" src="{{ asset('assets/imgs/snapcode.svg') }}" alt="" /><br /><br />
                         </div><br />
                         <div style="float:right">
+                            <a href="https://api.whatsapp.com/send?phone=966563375158" target="_blank"><i style="font-size:30px" class="fab fa-whatsapp"></i></a>&nbsp;&nbsp;
+                            <a href="https://t.me/reeltd" target="_blank"><i style="font-size:30px" class="fab fa-telegram"></i></a>&nbsp;&nbsp;                           
                             <a href="https://www.snapchat.com/add/reeltd" target="_blank"><i style="font-size:30px" class="fab fa-snapchat"></i></a>&nbsp;&nbsp;
-                            <a href="https://instagram.com/reeltd" target="_blank"><i style="font-size:30px" class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+                            <a href="https://www.facebook.com/reeltd" target="_blank"><i style="font-size:30px" class="fab fa-facebook"></i></a>&nbsp;&nbsp;
+                            <a href="https://instagram.com/reeltd0" target="_blank"><i style="font-size:30px" class="fab fa-instagram"></i></a>&nbsp;&nbsp;
                             <a href="https://twitter.com/reeltd1" target="_blank"><i style="font-size:30px" class="fab fa-twitter"></i></a>&nbsp;&nbsp;
-                            <a href="https://github.com/reeltd/reeltd.git" target="_blank"><i style="font-size:30px" class="fab fa-github"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://github.com/reeltd/reeltd.git" target="_blank"><i style="font-size:30px" class="fab fa-github"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')    
-{!! SEO::generate(true) !!}
 
 
 <div class="container">

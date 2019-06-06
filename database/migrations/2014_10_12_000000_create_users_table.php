@@ -19,7 +19,18 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('phonenumber')->nullable();
+            $table->string('accountstatus')->nullable(); /** public, private, locked, active, online */
+            $table->string('status')->nullable();
+            $table->string('bio')->nullable();
+            $table->string('company')->nullable();
+            $table->string('location')->nullable();
+            $table->string('website')->nullable();
+            $table->string('ipaddr')->nullable();
+            $table->string('photo')->default('user.png');
+            $table->string('access')->nullable();
             $table->rememberToken();
+            $table->string('lastseen')->nullable();
             $table->timestamps();
         });
     }

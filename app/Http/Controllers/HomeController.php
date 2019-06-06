@@ -1,10 +1,6 @@
 <?php
 
-use SEOMeta;
-use OpenGraph;
-use Twitter;
-## or
-use SEO;
+
 
 namespace ree\Http\Controllers;
 
