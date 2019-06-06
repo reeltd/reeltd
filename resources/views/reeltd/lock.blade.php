@@ -1,16 +1,21 @@
-@extends('layouts.ree')
+@extends('layouts.lock')
 @section('content')
 
+<link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-<body class="hold-transition lockscreen">
+<body style="padding-top:120px" class="hold-transition lockscreen">
 <!-- Automatic element centering -->
 <div class="lockscreen-wrapper">
   <div class="lockscreen-logo">
     <a href="/reeltd/locked"><b>RealEstateEmpire</b> LTE</a>
   </div>
   <!-- User name -->
-  <div class="lockscreen-name"><i class="fa fa-lock"></i> Administrators Access Only</div>
 
+  <div class="container">
+    <div class="row justify-content-center">
+  <div class="lockscreen-name"><i class="fa fa-lock"></i> Administrators Access Only</div>
+<br />
   <!-- START LOCK SCREEN ITEM -->
   <div class="lockscreen-item">
     <!-- lockscreen image -->
@@ -31,24 +36,22 @@
       </div>
     </form>
     <!-- /.lockscreen credentials -->
+    <!-- /.lockscreen-item -->
+    <div style="padding-left:50px;text-align:center" class="help-block">
+        Enter your password to retrieve your session
+    </div>
+    <div class="text-center">
+      <a href="login.html">Or sign in as a different user</a>
+    </div>
+  </div>
 
-  </div>
-  <!-- /.lockscreen-item -->
-  <div class="help-block text-center">
-    Enter your password to retrieve your session
-  </div>
-  <div class="text-center">
-    <a href="login.html">Or sign in as a different user</a>
-  </div>
-  <div class="lockscreen-footer text-center">
-    <p style="font-size:10px"><strong>Copyright &copy; 2019 <a href="#">Real Estate Empire LTE</a>.</strong> All rights reserved.</p>
-  </div>
-</div>
 <!-- /.center -->
 
 
-</body>
 
+</div>
+    </div>
+</body>
 
 
 @endsection

@@ -1,66 +1,41 @@
 @extends('layouts.global')
 @section('content')
 
-
-
-<body class="is-preload">
-
-
-
+<body class="is-preload skin-black">
   <!-- Main Header -->
   <header style="margin: 0 0 0 0;" class="main-header">
-
-
-
-  
     <!-- Nav -->
     <nav id="nav">
-            
         <ul class="container">
             <li><a href="#top">Top</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
-
         </ul>
     </nav>
-
     <!-- Logo -->
-    <a href="/" class="logo">
+    <a style="color:white" href="/" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>R</b>LT</span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><b>Real Estate Empire LTE</b></span>
     </a>
-
-
-
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
-
-      
-
-
-
-
-
-
-
     <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-
-                        <!-- Authentication Links -->
-                        @guest
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                        </li>
-                        @if (Route::has('register'))
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                        </li>
-                        @endif
-                        @else
+            <!-- Authentication Links -->
+            @guest
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}"> <i class="glyphicon glyphicon-log-in"></i> {{ __('Login') }}</a>
+            </li>
+            @if (Route::has('register'))
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('register') }}"> <i class="glyphicon glyphicon-plus"> </i> {{ __('Create an account') }}</a>
+            </li>
+            @endif
+            @else
         </ul>
     </div>
       <!-- Navbar Right Menu -->
@@ -190,10 +165,10 @@
                     <a href="#">Followers</a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Sales</a>
+                    <a href="#">Friends</a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Friends</a>
+                    <a href="/reeltd"><i class="glyphicon glyphicon-cog"></i></a>
                   </div>
                 </div>
                 <!-- /.row -->
@@ -201,10 +176,17 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="/profile" class="btn btn-default btn-flat"> <i class="glyphicon glyphicon-user"></i> Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a class="btn btn-default btn-flat" href="{{ route('logout') }}" 
+                      onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                      {{ __('Logout') }} <i class="glyphicon glyphicon-log-out"></i>
+                  </a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="">
+                        @csrf
+                  </form>
                 </div>
               </li>
             </ul>
@@ -215,37 +197,12 @@
           </li>-->
         </ul>
       </div>
-
-
-
-
-
-
-
-
-
-
     @endguest
-
-
-
-
-
-
-
-
-
-
-
-
-
     </nav>
   </header>
-
-
-
+</div>
 <!-- Home -->
-    <article id="top" class="wrapper style1">
+    <article  style="background-color: #ffffff;" id="top" class="style1">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-5-large col-12-medium">
@@ -263,7 +220,7 @@
     </article>
 
 <!-- Work -->
-    <article id="work" class="wrapper style2">
+    <article id="work" class="style2">
         <div class="container">
             <header>
                 <h2>Here's all the stuff I do.</h2>
@@ -300,7 +257,7 @@
     </article>
 
 <!-- Portfolio -->
-    <article id="portfolio" class="wrapper style3">
+    <article id="portfolio" class="style3">
         <div class="container">
             <header>
                 <h2>Here’s some stuff I made recently.</h2>
@@ -358,7 +315,7 @@
     </article>
 
 <!-- Contact -->
-    <article id="contact" class="wrapper style4">
+    <article id="contact" class="style4">
         <div class="container medium">
             <header>
                 <h2>Have me make stuff for you.</h2>

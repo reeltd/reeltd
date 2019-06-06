@@ -30,6 +30,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/add/ad', [
     'uses' => '\ree\Http\Controllers\AdsController@addAd',
 'as' => 'ads.index',
+'middleware' => ['auth'],
 ]);
 
 
@@ -37,10 +38,20 @@ Route::get('/add/ad', [
 Route::get('/reeltd', [
     'uses' => '\ree\Http\Controllers\ReeLTDController@getIndex',
 'as' => 'reeltd.index',
+'middleware' => ['auth'],
 ]);
 
 /** Admin Routes */
 Route::get('/reeltd/locked', [
     'uses' => '\ree\Http\Controllers\ReeLTDController@getLock',
 'as' => 'reeltd.lock',
+'middleware' => ['auth'],
+]);
+
+
+/** Profile Routes */
+Route::get('/profile', [
+    'uses' => '\ree\Http\Controllers\ProfileController@getIndex',
+'as' => 'profile.index',
+'middleware' => ['auth'],
 ]);

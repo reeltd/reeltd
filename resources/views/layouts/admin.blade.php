@@ -68,33 +68,33 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<!-- Header -->
-<header style="margin: 0 0 0 0;" class="skin-black main-header">
+
+
+
+
+
+
+
+<body class="hold-transition skin-black sidebar-mini fixed">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
     <!-- Logo -->
-    <a href="/" class="logo">
+    <a href="/reeltd" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>R</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Real Estate Empire LTE</b></span>
+      <span class="logo-lg"><b>REE LTE</b></span>
     </a>
+
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-            <!-- Authentication Links -->
-            @guest
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}"> <i class="glyphicon glyphicon-log-in"></i> {{ __('Login') }}</a>
-            </li>
-            @if (Route::has('register'))
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('register') }}"> <i class="glyphicon glyphicon-plus"> </i> {{ __('Create an account') }}</a>
-            </li>
-            @endif
-            @else
-        </ul>
-    </div>
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
@@ -114,7 +114,7 @@
                     <a href="#">
                       <div class="pull-left">
                         <!-- User Image -->
-                        <img src="{{ asset('ree/dist/img') }}/{{ \Auth::user()->photo }}" class="img-circle" alt="User Image">
+                        <img src="{{ asset('ree/dist/img/user.png') }}" class="img-circle" alt="User Image">
                       </div>
                       <!-- Message title and timestamp -->
                       <h4>
@@ -201,21 +201,20 @@
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="{{ asset('ree/dist/img') }}/{{ \Auth::user()->photo }}" class="user-image" alt="User Image">
+              <img src="{{ asset('ree/dist/img/user.png') }}" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
-                <img src="{{ asset('ree/dist/img') }}/{{ \Auth::user()->photo }}" class="img-circle" alt="User Image">
+                <img src="{{ asset('ree/dist/img/user.png') }}" class="img-circle" alt="User Image">
 
                 <p>
                   Alexander Pierce - Web Developer
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>
-
               <!-- Menu Body -->
               <li class="user-body">
                 <div class="row">
@@ -226,7 +225,7 @@
                     <a href="#">Friends</a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="/reeltd"><i class="glyphicon glyphicon-cog"></i></a>
+                    <a href="/reeltd/locked"><i class="glyphicon glyphicon-lock"></i></a>
                   </div>
                 </div>
                 <!-- /.row -->
@@ -250,58 +249,23 @@
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
-          <!--<li>
+          <li>
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>-->
+          </li>
         </ul>
       </div>
-
-
-
-
-
-
-
-
-
-
-    @endguest
-
-
-
-
-
-
-
-
-
-
-
-
-
     </nav>
   </header>
-
-  <!-- /Header -->
-
-
-
-
-
-
-
-
-
 
 
             @yield('content')
 
-
+    </body>
   <!-- Footer -->
 
   
   
-  <footer class="footer">
+  <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
     <p style="font-size:10px">Built with <i class="fa fa-heart"></i> by <a href="https://github.com/exploi8" target="_blank"><kbd>0x000001</kbd></a></p>
