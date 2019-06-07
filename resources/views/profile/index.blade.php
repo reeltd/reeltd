@@ -7,12 +7,10 @@
   <div class="container">
     <div class="row justify-content-center">
         <section>
-      <h1>
-        User Profile
-      </h1>
+<div style="padding-top:20px"></div>
       <ol class="breadcrumb">
         <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-        <li class="active">User profile</li>
+        <li class="active">Profile</li>
       </ol>
     </section>
 

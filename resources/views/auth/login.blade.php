@@ -74,22 +74,31 @@
 </div>-->
 
 
+<style>
+    .body {
+        background-size: fixed;
+        background-image:url('http://ipool.remotewebaccess.com:810/assets/imgs/bg7.jpg');
+        width: 100%; 
+        background-repeat: repeat;
+        }
+</style>
 
 
-
-
-
-
-<body class="hold-transition login-page">
+<body class="hold-transition login-page body">
 <div class="login-box">
     <div class="justify-content-center">
         <div class="login-logo">
             <img style="width: 120px;" src="{{ asset('assets/imgs/favicon.ico') }}" alt="">
-            <a href="/"><b>REE </b>LTE</a>
+            <a style="color: ghostwhite; " href="/"><b>REE </b>LTE</a>
         </div>            
     </div>
   <!-- /.login-logo --> 
-  <div class="login-box-body">
+  
+  <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Login</h3>
+            </div>
+        <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
     <form method="POST" action="{{ route('login') }}">
@@ -163,7 +172,7 @@
   <!-- /.login-box-body -->
 </div>
 <!-- /.login-box -->
-
+</div>
 <script>
   $(function () {
     $('input').iCheck({
@@ -173,7 +182,7 @@
     });
   });
 </script>
-
+</div>
 </body>
 
 

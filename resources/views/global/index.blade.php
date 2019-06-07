@@ -14,11 +14,11 @@
         </ul>
     </nav>
     <!-- Logo -->
-    <a style="color:white" href="/" class="logo">
+    <a style="background-color: #fff;color:white" href="/" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>R</b>LT</span>
+      <span style="color: ghostwhite; " class="logo-mini"><b>R</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Real Estate Empire LTE</b></span>
+      <span style="color: ghostwhite; " class=""><b>Real Estate Empire LTE</b></span>
     </a>
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
@@ -383,10 +383,10 @@
   <footer class="footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-    <p style="font-size:10px">Built with <i class="fa fa-heart"></i> by <a href="https://github.com/exploi8" target="_blank"><kbd>0x000001</kbd></a></p>
+    <p style="font-size:10px;padding-right:40px">Built with <i class="fa fa-heart"></i> by <a href="https://github.com/exploi8" target="_blank"><kbd>0x000001</kbd></a></p>
     </div>
     <!-- Default to the left -->
-    <p style="font-size:10px"><strong>Copyright &copy; 2019 <a href="#">Real Estate Empire LTE</a>.</strong> All rights reserved.</p>
+    <p style="font-size:10px;padding-left:40px"><strong>Copyright &copy; 2019 <a href="#">Real Estate Empire LTE</a>.</strong> All rights reserved.</p>
   </footer>
   
   

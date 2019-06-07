@@ -1,6 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
+
+<style>
+    .body {
+        background-size: fixed;
+        background-image:url('http://ipool.remotewebaccess.com:810/assets/imgs/bg7.jpg');
+        width: 100%; 
+        background-repeat: repeat;
+        }
+</style>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

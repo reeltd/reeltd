@@ -2,15 +2,32 @@
 
 @section('content')
 
-<body class="hold-transition register-page">
+
+<style>
+    .body {
+        background-size: fixed;
+        background-image:url('http://ipool.remotewebaccess.com:810/assets/imgs/bg7.jpg');
+        width: 100%; 
+        background-repeat: repeat;
+        }
+</style>
+
+
+<body class="hold-transition register-page body">
 <div class="register-box">
     <div class="justify-content-center">
         <div class="login-logo">
             <img style="width: 120px;" src="{{ asset('assets/imgs/favicon.ico') }}" alt="">
-            <a href="/"><b>REE </b>LTE</a>
+            <a style="color: ghostwhite; " href="/"><b>REE </b>LTE</a>
         </div>            
     </div>
-        <div class="card-body">
+
+    <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Reset your password</h3>
+            </div>
+        <div class="login-box-body">
+
             @if (session('status'))
                 <div class="alert alert-success" role="alert">
                     {{ session('status') }}

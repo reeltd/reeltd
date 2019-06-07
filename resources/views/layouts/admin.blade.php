@@ -219,10 +219,10 @@
               <li class="user-body">
                 <div class="row">
                   <div class="col-xs-4 text-center">
-                    <a href="#">Followers</a>
+                    <a href="/"> <i class="glyphicon glyphicon-home"></i> </a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Friends</a>
+                    <a href="http://ipool.remotewebaccess.com/mail" target="_blank"> <i class="glyphicon glyphicon-envelope"></i> </a>
                   </div>
                   <div class="col-xs-4 text-center">
                     <a href="/reeltd/locked"><i class="glyphicon glyphicon-lock"></i></a>

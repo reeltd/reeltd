@@ -2,6 +2,19 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 
+
+
+
+<style>
+    .body {
+        background-size: fixed;
+        background-image:url('http://ipool.remotewebaccess.com:810/assets/imgs/bg7.jpg');
+        width: 100%; 
+        background-repeat: repeat;
+        }
+</style>
+
+
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -71,14 +84,14 @@
 <!-- Header -->
 <header style="margin: 0 0 0 0;" class="skin-black main-header">
     <!-- Logo -->
-    <a href="/" class="logo">
+    <a style="background-color: ghostwhite;color:black" href="/" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>R</b>LT</span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><b>Real Estate Empire LTE</b></span>
     </a>
     <!-- Header Navbar -->
-    <nav class="navbar navbar-static-top" role="navigation">
+    <nav style="    background-color: ghostwhite;" class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
@@ -254,65 +267,24 @@
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
           </li>-->
         </ul>
-      </div>
-
-
-
-
-
-
-
-
-
-
+    </div>
     @endguest
-
-
-
-
-
-
-
-
-
-
-
-
-
     </nav>
   </header>
 
   <!-- /Header -->
 
-
-
-
-
-
-
-
-
-
-
-            @yield('content')
-
-
+      @yield('content')
+      
   <!-- Footer -->
-
-  
-  
-  <footer class="footer">
+  <footer style="padding-top: 14px;background-color: ghostwhite; width:100%;position: fixed; left: 0;   bottom: 0;" class="footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-    <p style="font-size:10px">Built with <i class="fa fa-heart"></i> by <a href="https://github.com/exploi8" target="_blank"><kbd>0x000001</kbd></a></p>
+    <p style="font-size:10px;padding-right:60px">Built with <i class="fa fa-heart"></i> by <a href="https://github.com/exploi8" target="_blank"><kbd>0x000001</kbd></a></p>
     </div>
     <!-- Default to the left -->
-    <p style="font-size:10px"><strong>Copyright &copy; 2019 <a href="#">Real Estate Empire LTE</a>.</strong> All rights reserved.</p>
+    <p style="font-size:10px;padding-left:60px"><strong>Copyright &copy; 2019 <a href="#">Real Estate Empire LTE</a>.</strong> All rights reserved.</p>
   </footer>
-
-
-
-
   <!-- /Footer -->
 <!-- jQuery 3 -->
 <script src="{{ asset('ree/bower_components/jquery/dist/jquery.min.js') }}"></script>
