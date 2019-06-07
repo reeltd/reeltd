@@ -1,6 +1,6 @@
-<img src="http://ipool.remotewebaccess.com:810/assets/imgs/reeltd-512x512-color.png" align="right" style="height: 64px"/>
+<img src="http://ipool.remotewebaccess.com:810/assets/imgs/reeltd-512x512-color.png" align="right" style="max-width: 64px; height: 64px"/>
 
-# Real Estate Empire LTE (Documentation Server).
+# Real Estate ~~Empire~~ Engine LTE (Documentation Server).
 
 
 ```cmd
@@ -22,7 +22,7 @@ __const__
 
 LTD => TOP_LEVEL + Documentation.
 LTE => Administrator Control Panal.
-LTF => Fron End.
+LTF => Fron End Interface.
 LTG => All About GitHub.
 .
 .
@@ -37,6 +37,64 @@ LTZ => Packages archive & library. e.g. reexx-v0.0.3.tar.gz
         }
 
 ```
+
+## Social Media Accounts
+    
+### Real Estate ~~Empire~~ Engine (REE)
+
+    Staging & Development Server
+    http://ipool.remotewebaccess.com:810/
+    
+    Production Server
+    http://ipool.remotewebaccess.com:820/
+    
+    
+#### ReeLTD Social Media Accounts
+    
+Snap
+
+    https://www.snapchat.com/add/reeltd
+    email: reeltd@ipool.remotewebaccess.com
+    un: reeltd
+    pass: *******
+    
+Twitter
+
+    https://twitter.com/reeltd1
+    email: reeltd@ipool.remotewebaccess.com
+    un: reeltd1
+    pass: *******
+    
+Insta
+
+    https://instagram.com/reeltd0
+    email: reeltd0@ipool.remotewebaccess.com
+    un: reeltd0
+    pass: *******
+    
+Facebook
+
+    https://www.facebook.com/reeltd
+    email: reeltd@ipool.remotewebaccess.com
+    un: reeltd1
+    pass: *******
+    phone: 0562204816
+    
+WhatsApp
+
+    https://api.whatsapp.com/send?phone=966563375158
+    +966563375158
+    
+Telegram
+
+    https://t.me/reeltd
+    
+GitHub
+
+    https://github.com/reeltd/reeltd.git
+    email: reeltd@ipool.remotewebaccess.com
+    un: reeltd
+    pass: *******
 
 ## Sync & Merge Dev + Prod
 
@@ -163,4 +221,20 @@ Removing resources/views/profile/
 Removing resources/views/reeltd/
 root@0x01:/var/www/html/reeltd#
 
+```
+
+## Generate docs after updating ``` public/README.md```  file
+
+```bash
+
+phsycho@x000001:/mnt/c/inetpub/wwwroot/dev/reeltd$ cd public/
+phsycho@x000001:/mnt/c/inetpub/wwwroot/dev/reeltd/public$ yard
+Files:           0
+Modules:         0 (    0 undocumented)
+Classes:         0 (    0 undocumented)
+Constants:       0 (    0 undocumented)
+Attributes:      0 (    0 undocumented)
+Methods:         0 (    0 undocumented)
+ 100.00% documented
+ 
 ```

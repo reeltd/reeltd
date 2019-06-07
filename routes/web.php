@@ -41,6 +41,21 @@ Route::get('/reeltd', [
 'middleware' => ['auth'],
 ]);
 
+
+/** Ads Routes */
+Route::get('/reeltd/new-ad', function () {
+    return view('reeltd.new');
+});
+
+Route::get('/reeltd/edit-ad', function () {
+    return view('reeltd.edit');
+});
+
+Route::get('/reeltd/delete-ad', function () {
+    return view('reeltd.delete');
+});
+
+
 /** Admin Routes */
 Route::get('/reeltd/locked', [
     'uses' => '\ree\Http\Controllers\ReeLTDController@getLock',
@@ -55,3 +70,9 @@ Route::get('/profile', [
 'as' => 'profile.index',
 'middleware' => ['auth'],
 ]);
+
+
+/** Docs Routes */
+Route::get('/docs', function () {
+    return view('docs.index');
+});
