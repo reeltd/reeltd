@@ -146,7 +146,7 @@
               <!-- The user image in the navbar-->
               <img src="{{ asset('ree/dist/img') }}/{{ \Auth::user()->photo }}" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs">{{ \Auth::user()->name }}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
@@ -154,8 +154,8 @@
                 <img src="{{ asset('ree/dist/img') }}/{{ \Auth::user()->photo }}" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
-                  <small>Member since Nov. 2012</small>
+                  {{ \Auth::user()->name }} - Web Developer
+                  <small>Member since {{ \Auth::user()->created_at->diffForHumans() }}</small>
                 </p>
               </li>
               <!-- Menu Body -->
@@ -165,7 +165,7 @@
                     <a href="#">Followers</a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Friends</a>
+                  <a href="/ads"> <i class="fa fa-buysellads"></i> Ads</a>
                   </div>
                   <div class="col-xs-4 text-center">
                     <a href="/reeltd"><i class="glyphicon glyphicon-cog"></i></a>

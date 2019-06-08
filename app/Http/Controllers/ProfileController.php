@@ -12,4 +12,17 @@ class ProfileController extends Controller
     {
         return view('profile.index');
     }
+
+    public function getProfile($username)
+    {
+    	$user = User::where('user', $username)->first();
+    	
+    	if (!$user) {
+    		abort(404);
+    	}
+    	
+    	$statuses = $user->statuses()->notReply()->get();
+    	
+    	return view ('profile.index')->with('user', $user)->with('statuses', $statuses)->with('authUserIsFriend', Auth::user()->isFriendsWith($user));
+    }
 }

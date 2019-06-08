@@ -203,7 +203,7 @@
               <!-- The user image in the navbar-->
               <img src="{{ asset('ree/dist/img/user.png') }}" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs">{{ \Auth::user()->name }}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
@@ -211,8 +211,8 @@
                 <img src="{{ asset('ree/dist/img/user.png') }}" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
-                  <small>Member since Nov. 2012</small>
+                    {{ \Auth::user()->name }} - Web Developer
+                    <small>Member since {{ \Auth::user()->created_at->diffForHumans() }}</small>
                 </p>
               </li>
               <!-- Menu Body -->
@@ -301,15 +301,16 @@
         <li><a href="/reeltd"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
         <li><a href="/reeltd"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+          <a href="#"><i class="fa fa-link"></i> <span>Ads</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
           </a>
           
           <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
+            <li><a href="/reeltd/new-ad"> <i class="fa fa-plus"></i> Create a New Ad</a></li>
+            <li><a href="/reeltd/edit-ad"> <i class="fa fa-edit"></i> Edit Ads</a></li>
+            <li><a href="/reeltd/delete-ad"> <i class="fa fa-trash"></i> Delete Ads</a></li>
           </ul>
           <li class="active"><a href="/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
         </li>

@@ -104,10 +104,13 @@ Content
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+  
 
-  <!-- Main Footer -->
+  
+
+  
 
 
-  </body>
 
+  
 @endsection

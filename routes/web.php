@@ -27,8 +27,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 /** Ads Routes */
-Route::get('/add/ad', [
-    'uses' => '\ree\Http\Controllers\AdsController@addAd',
+Route::get('/ads', [
+    'uses' => '\ree\Http\Controllers\AdsController@getAdsIndex',
 'as' => 'ads.index',
 'middleware' => ['auth'],
 ]);

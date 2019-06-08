@@ -2,8 +2,10 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 
+
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- CSRF Token -->
@@ -11,12 +13,20 @@
 
     <title>{{ config('app.name', 'ReeLTD') }}</title>
 
-    <link rel="stylesheet" href="{{ asset('inc/assets/css/main.css') }}" />
 
 
+    <!-- Scripts -->
+    <!--<script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/jquery-3.4.1.min.js') }}" defer></script>-->
 
+    <!-- Fonts -->
+    <!--<link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">-->
 
-
+    <!-- Styles -->
+    <!--<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>-->
+    <!-- iPhone enable -->
     <link rel="manifest" href="{{ asset('js/manifest.json') }}">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -59,40 +69,54 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-
-
-
-
-
 </head>
 
 
 
 
 
-
-@yield('content')
-
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
 
 
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand"><b>REE</b> LTE</a>
 
-		    <!-- Scripts -->
-            <script src="{{ asset('inc/assets/js/jquery.min.js') }}"></script>
-            <script src="{{ asset('inc/assets/js/jquery.scrolly.min.js') }}"></script>
-            <script src="{{ asset('inc/assets/js/browser.min.js') }}"></script>
-            <script src="{{ asset('inc/assets/js/breakpoints.min.js') }}"></script>
-            <script src="{{ asset('inc/assets/js/util.js') }}"></script>
-            <script src="{{ asset('inc/assets/js/main.js') }}"></script>
-            
+          
+        </div>
 
-            
+        
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  
+
+
+
+
+  @yield('content')
+  
+
+<!-- Footer -->
+<footer style="padding-top: 14px;background-color: ghostwhite; width:100%;position: fixed; left: 0;   bottom: 0;" class="footer">
+  <!-- To the right -->
+  <div class="pull-right hidden-xs">
+  <p style="font-size:10px;padding-right:60px">Built with <i class="fa fa-heart"></i> by <a href="https://github.com/exploi8" target="_blank"><kbd>0x000001</kbd></a></p>
+  </div>
+  <!-- Default to the left -->
+  <p style="font-size:10px;padding-left:60px"><strong>Copyright &copy; 2019 <a href="#">Real Estate Empire LTE</a>.</strong> All rights reserved.</p>
+</footer>
+<!-- /Footer -->
 <!-- jQuery 3 -->
 <script src="{{ asset('ree/bower_components/jquery/dist/jquery.min.js') }}"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="{{ asset('ree/bower_components/jquery-ui/jquery-ui.min.js') }}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
-  $.widget.bridge('uibutton', $.ui.button);
+$.widget.bridge('uibutton', $.ui.button);
 </script>
 <!-- Bootstrap 3.3.7 -->
 <script src="{{ asset('ree/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
@@ -117,10 +141,11 @@
 <script src="{{ asset('ree/bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
 <!-- FastClick -->
 <script src="{{ asset('ree/bower_components/fastclick/lib/fastclick.js') }}"></script>
-<!-- AdminLTE App
-<script src="{{ asset('ree/dist/js/adminlte.min.js') }}"></script> -->
+<!-- AdminLTE App -->
+<script src="{{ asset('ree/dist/js/adminlte.min.js') }}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ asset('ree/dist/js/pages/dashboard.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('ree/dist/js/demo.js') }}"></script>
+
 </html>

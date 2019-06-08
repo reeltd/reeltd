@@ -1,4 +1,4 @@
-@extends('layouts.ree')
+@extends('layouts.auth')
 
 @section('content')
 <!--<link href="{{ asset('css/app.css') }}" rel="stylesheet">-->

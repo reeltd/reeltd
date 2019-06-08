@@ -121,7 +121,7 @@ sftp> put dev-pack.zip
 
 cd /var/www/html/reeltd
 
-unzip dev-pack.zip
+unzip -n dev-pack.zip
 
 git pull
 

@@ -1,4 +1,4 @@
-@extends('layouts.ree')
+@extends('layouts.auth')
 
 @section('content')
 <!--<link href="{{ asset('css/app.css') }}" rel="stylesheet">-->
@@ -83,8 +83,8 @@
         }
 </style>
 
+<body class="skin-black layout-top-nav body">
 
-<body class="hold-transition login-page body">
 <div class="login-box">
     <div class="justify-content-center">
         <div class="login-logo">
@@ -183,7 +183,6 @@
   });
 </script>
 </div>
+
 </body>
-
-
 @endsection

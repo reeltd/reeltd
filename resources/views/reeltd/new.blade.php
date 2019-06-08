@@ -59,30 +59,14 @@
       <div class="row">
         <div class="col-md-12">
 
-
-
-
-
-
-
-
         
           <!-- /.box -->
 
           <div class="box">
             <div class="box-header">
                 <form action="" method="POST"> <input class="input-group mb-6" type="text" width="60%" placeholder="Title"> <input class="input-group mb-3" type="text" width="30%" placeholder="slug-2019-0-0-3"> </form>
-              
-              
-                <div class="input-group">
-                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
-                <div class="input-group-append" id="button-addon4">
-                    <button class="btn btn-outline-secondary" type="button">Button</button>
-                    <button class="btn btn-outline-secondary" type="button">Button</button>
-                </div>
-                </div>
-
-
+  
+                
                 <h3 class="box-title">
                 <small>Simple and fast</small>
               </h3>
@@ -96,8 +80,7 @@
             <!-- /.box-header -->
             <div class="box-body pad">
               <form>
-                <textarea class="textarea" placeholder="Place some text here"
-                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                <textarea class="textarea" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
               </form>
             </div>
           </div>
@@ -151,7 +134,10 @@
                 } )
                 .catch( error => console.error( error ) );
         </script>
-
+<!-- Library -->
+<script src="{{ asset('ree/plugins/bootstrap-wysihtml5/dist/wysihtml-toolbar.min.js') }}"></script>
+<!-- wysihtml5 parser rules -->
+<script src="{{ asset('ree/plugins/bootstrap-wysihtml5/parser_rules/advanced.js') }}"></script>
   </body>
 
 
