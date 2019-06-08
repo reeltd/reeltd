@@ -96,6 +96,60 @@ GitHub
     un: reeltd
     pass: *******
 
+
+
+## Sync & Merge Dev + Prod DB
+
+### login to mysql in prod side:
+
+```bash
+
+root@0x01:/var/www/html/reeltd# mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 79
+Server version: 10.3.15-MariaDB-1 Debian 10
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use reeltd0;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [reeltd0]> select * from migrations;
++----+------------------------------------------------+-------+
+| id | migration                                      | batch |
++----+------------------------------------------------+-------+
+|  2 | 2014_10_12_100000_create_password_resets_table |     1 |
+|  3 | 2019_06_04_003256_create_ads_table             |     2 |
+|  5 | 2014_10_12_000000_create_users_table           |     3 |
++----+------------------------------------------------+-------+
+3 rows in set (0.000 sec)
+
+MariaDB [reeltd0]> delete from migrations where id=5;
+Query OK, 1 row affected (0.049 sec)
+
+MariaDB [reeltd0]> drop table users;
+Query OK, 0 rows affected (0.225 sec)
+
+MariaDB [(none)]> quit;
+Bye
+
+```
+
+After dropping table and deleted old migration, you can ```./artisan migrate```
+
+```bash
+
+root@0x01:/var/www/html/reeltd# ./artisan migrate
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table
+
+```
+
 ## Sync & Merge Dev + Prod
 
 ## repetitive tasks
@@ -238,3 +292,4 @@ Methods:         0 (    0 undocumented)
  100.00% documented
  
 ```
+
