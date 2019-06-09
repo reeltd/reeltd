@@ -96,6 +96,17 @@ GitHub
     un: reeltd
     pass: *******
 
+Business MAIL Accounts
+
+    email: reeltd0@gmail.com
+    pass: *******
+    
+    
+    reeltd@ipool.remotewebaccess.com => redirects to ==reeltd0@gmail.com==
+    reeltd0@ipool.remotewebaccess.com =>  redirects to ==reeltd0@gmail.com==
+    
+    pass: *******
+
 
 
 ## Sync & Merge Dev + Prod DB
