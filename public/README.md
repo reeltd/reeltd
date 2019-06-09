@@ -23,10 +23,12 @@ __const__
 LTD => TOP_LEVEL + Documentation.
 LTE => Administrator Control Panal.
 LTF => Fron End Interface.
-LTG => All About GitHub.
+LTG => All About Google, GitHub.
 .
+LTS => All About Snap.
+LTT => All About Twitter.
 .
-.
+LTW => All About WhatsApp.
 LTZ => Packages archive & library. e.g. reexx-v0.0.3.tar.gz 
       Where xx: {
             js => node
@@ -131,6 +133,9 @@ phsycho@x000001:/mnt/c/inetpub/wwwroot/dev/reeltd$ zip -u -r dev-pack.zip .env v
 phsycho@x000001:/mnt/c/inetpub/wwwroot/dev/reeltd$ sftp root@0x01.ies.com
 sftp> cd /var/www/html/reeltd
 sftp> put dev-pack.zip
+Uploading dev-pack.zip to /var/www/html/reeltd/dev-pack.zip
+dev-pack.zip                                                                                                                                        100%   79MB  11.2MB/s   00:07
+sftp> ^D
 phsycho@x000001:/mnt/c/inetpub/wwwroot/dev/reeltd$ git push
 
 
