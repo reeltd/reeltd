@@ -108,6 +108,47 @@ Business MAIL Accounts
     pass: *******
 
 
+## Sync & Merge Dev + Prod
+
+## repetitive tasks
+
+### Dev commands PACK & PUSH edits and changes
+
+```cmd
+
+phsycho@x000001:/mnt/c/inetpub/wwwroot/dev/reeltd$ cd public/
+phsycho@x000001:/mnt/c/inetpub/wwwroot/dev/reeltd/public$ yard
+Files:           0
+Modules:         0 (    0 undocumented)
+Classes:         0 (    0 undocumented)
+Constants:       0 (    0 undocumented)
+Attributes:      0 (    0 undocumented)
+Methods:         0 (    0 undocumented)
+ 100.00% documented
+
+phsycho@x000001:/mnt/c/inetpub/wwwroot/dev/reeltd/public$ cd ..
+phsycho@x000001:/mnt/c/inetpub/wwwroot/dev/reeltd$ zip -u -r dev-pack.zip .env vendor/ node_modules/ public/inc/ public/assets/ public/ree/ public/doc/ public/cmd
+phsycho@x000001:/mnt/c/inetpub/wwwroot/dev/reeltd$ sftp root@0x01.ies.com
+sftp> cd /var/www/html/reeltd
+sftp> put dev-pack.zip
+phsycho@x000001:/mnt/c/inetpub/wwwroot/dev/reeltd$ git push
+
+
+```
+
+### Prod commands UNPACK & PULL edits and changes
+
+```cmd
+
+cd /var/www/html/reeltd
+
+unzip -n dev-pack.zip
+
+git pull
+
+```
+
+-------------------
 
 ## Sync & Merge Dev + Prod DB
 
@@ -160,39 +201,7 @@ Migrating: 2014_10_12_000000_create_users_table
 Migrated:  2014_10_12_000000_create_users_table
 
 ```
-
-## Sync & Merge Dev + Prod
-
-## repetitive tasks
-
-### Dev commands PACK & PUSH edits and changes
-
-```cmd
-
-cd /mnt/c/inetpub/wwwroot/dev/reeltd
-
-zip -r dev-pack.zip .env vendor/ node_modules/ public/ree/ public/inc/ public/assets/  public/assets/ public/ree /public/inc public/doc public/cmd
-
-git push
-
-sftp> cd /var/www/html/reeltd
-sftp> put dev-pack.zip
-
-```
-
-### Prod commands UNPACK & PULL edits and changes
-
-```cmd
-
-cd /var/www/html/reeltd
-
-unzip -n dev-pack.zip
-
-git pull
-
-```
-
--------------------
+---------------------
 
 ## Git
 

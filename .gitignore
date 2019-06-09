@@ -1,6 +1,7 @@
 node_modules
 public/mirror/secret
 public/.yardoc
+public/versions
 public/cmd
 public/doc
 public/hot
