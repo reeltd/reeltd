@@ -110,9 +110,9 @@ Business MAIL Accounts
 
 ## Sync & Merge Dev + Prod
 
-## repetitive tasks
+### Unix on Windows
 
-### Dev commands PACK & PUSH edits and changes
+#### Dev commands PACK & PUSH edits and changes
 
 ```cmd
 
@@ -136,15 +136,20 @@ phsycho@x000001:/mnt/c/inetpub/wwwroot/dev/reeltd$ git push
 
 ```
 
-### Prod commands UNPACK & PULL edits and changes
+### UNIX
 
-```cmd
+#### Prod commands UNPACK & PULL edits and changes
 
-cd /var/www/html/reeltd
+```bash
 
-unzip -n dev-pack.zip
+root@0x01:~# cd /var/www/html/reeltd
+root@0x01:/var/www/html/reeltd# git status
+On branch master
+Your branch is up to date with 'origin/master'.
 
-git pull
+nothing to commit, working tree clean
+root@0x01:/var/www/html/reeltd# unzip -n dev-pack.zip
+root@0x01:/var/www/html/reeltd# git pull
 
 ```
 
